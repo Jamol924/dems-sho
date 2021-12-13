@@ -30,6 +30,11 @@
       "ru": "Ты ошибся!",
       "en": "You made a mistake!"
     },
+    "not": {
+      "uz": "Siz xato kodini kiritdingiz!",
+      "ru": "Вы ввели код ошибки!",
+      "en": "You entered an error code!"
+    },
     "utdingiz": {
       "uz": "Ruyxatdan utdingiz",
       "ru": "Вы потеряли список",
@@ -281,6 +286,11 @@
       "uz": "Yoqilg'i",
       "ru": "Топливо",
       "en": "Fuel"
+    },
+    "color": {
+      "uz": "rang",
+      "ru": "цвет",
+      "en": "color"
     },
     "mev": {
       "uz": "Mevalar",

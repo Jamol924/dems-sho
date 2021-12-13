@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
-import {  Box } from "@mui/system";
+import { Box } from "@mui/system";
 import { useDispatch, useSelector } from "react-redux";
 import { categoreProduct } from "../../../../redux/active/productActions";
 import Nav2 from "../../../../components/Nav2";
@@ -31,11 +31,10 @@ import {
   StyledFormControl,
   StyledButton,
   StyledMenuItem,
-  StyledToggleButton
+  StyledToggleButton,
 } from "../MaterialTovar/Tovar.jsx";
 import MinNav from "../../../../components/common/MineNavbar/MinNav";
 import { useSnackbar } from "notistack";
-
 
 function Cars(props) {
   const lan = useSelector((state) => state.allLanguage);
@@ -51,8 +50,11 @@ function Cars(props) {
   const handleClickVariant = (variant) => () => {
     enqueueSnackbar(L.tizim.tovar[lan], { variant });
   };
+  const handleClickVariantXato = (variant) => () => {
+    enqueueSnackbar(L.tizim.xato[lan], { variant });
+  };
   const handleApi = async () => {
-   await axios
+    await axios
       .post("http://dems.inone.uz/api/brand/get-pagin", {
         limit: 10,
         page: 1,
@@ -111,7 +113,7 @@ function Cars(props) {
   };
   const [alignment, setAlignment] = useState("#ccc");
   const handleAlignment = (event, newAlignment) => {
-    setAlignment(newAlignment );
+    setAlignment(newAlignment);
   };
   const [textarea, setTextarea] = useState("");
   const handleTextareaChange = (el) => {
@@ -155,7 +157,6 @@ function Cars(props) {
     setGorod(event.target.value);
   };
 
-  
   useEffect(() => {
     handleApi();
     regionFetch();
@@ -171,7 +172,7 @@ function Cars(props) {
       values.sen,
       values.textarea
     );
-   await axios
+    await axios
       .post(
         "http://dems.inone.uz/api/ad/create",
         {
@@ -200,9 +201,13 @@ function Cars(props) {
       )
       .then(() => {
         history.push("/Admen");
-        handleClickVariant("success")()
+        handleClickVariant("success")();
       })
-      .catch((err) => console.log(err));
+      .catch((error) => {
+        if (error.response.data.code === 55001) {
+          handleClickVariantXato("error")();
+        }
+      });
   };
 
   const schema = yup.object({
@@ -265,12 +270,11 @@ function Cars(props) {
                 >
                   <InputLabel>{L.tovarAdd.cars.marka[lan]}*</InputLabel>
 
-                  <Select
-                    value={age}
-                    onChange={handleChange}
-                  >
+                  <Select value={age} onChange={handleChange}>
                     {CategoreRispons.data.map((Categor) => (
-                      <StyledMenuItem  value={Categor._id}>{Categor.name}</StyledMenuItem>
+                      <StyledMenuItem value={Categor._id}>
+                        {Categor.name}
+                      </StyledMenuItem>
                     ))}
                   </Select>
                 </StyledFormControl>
@@ -322,13 +326,13 @@ function Cars(props) {
                     label="Age"
                     onChange={handleTolivoChange}
                   >
-                    <StyledMenuItem value={"Chevrolet"}>
+                    <StyledMenuItem value={"Yoqilg'i"}>
                       {L.tovarAdd.cars.toplvo[lan]}{" "}
                     </StyledMenuItem>
-                    <StyledMenuItem value={"Daevo"}>
+                    <StyledMenuItem value={"Benzin"}>
                       {L.tovarAdd.cars.ben[lan]}
                     </StyledMenuItem>
-                    <StyledMenuItem value={"Baz"}>
+                    <StyledMenuItem value={"Gaz"}>
                       {L.tovarAdd.cars.gaz[lan]}{" "}
                     </StyledMenuItem>
                   </Select>
@@ -336,7 +340,9 @@ function Cars(props) {
 
                 <StyledFormControl variant="filled" sx={{ minWidth: 120 }}>
                   <Select value={novy} label="Age" onChange={handleNovyChange}>
-                    <StyledMenuItem value="new">{L.tovarAdd.fash.now[lan]}</StyledMenuItem>
+                    <StyledMenuItem value="new">
+                      {L.tovarAdd.fash.now[lan]}
+                    </StyledMenuItem>
                     <StyledMenuItem value="old">В/У </StyledMenuItem>
                   </Select>
                 </StyledFormControl>
@@ -434,7 +440,9 @@ function Cars(props) {
                     onChange={handleRegionChange}
                   >
                     {regions.map((Region) => (
-                      <StyledMenuItem value={Region._id}>{Region.name}</StyledMenuItem>
+                      <StyledMenuItem value={Region._id}>
+                        {Region.name}
+                      </StyledMenuItem>
                     ))}
                   </Select>
                 </StyledFormControl>
@@ -498,13 +506,13 @@ function Cars(props) {
               </p>
             </MenuContent>
             <AcceptMaxFiles />
-            <Box sx={{ mt: 2, mb:4 }}>
+            <Box sx={{ mt: 2, mb: 4 }}>
               <StyledButton
                 onClick={handleSubmit(handlSubmit)}
-                
                 variant="contained"
                 variant="contained"
-              >{L.tovarAdd.cars.but12[lan]}
+              >
+                {L.tovarAdd.cars.but12[lan]}
               </StyledButton>
             </Box>
           </Container>

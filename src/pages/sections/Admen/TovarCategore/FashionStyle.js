@@ -21,7 +21,7 @@ import {
   StyledTextField,
   ContentRow,
   StyledFormControl,
-  StyledMenuItem
+  StyledMenuItem,
 } from "../MaterialTovar/Tovar";
 import MinNav from "../../../../components/common/MineNavbar/MinNav";
 import { useSnackbar } from "notistack";
@@ -40,6 +40,10 @@ function FashionStyle({ category }) {
   const { enqueueSnackbar } = useSnackbar();
   const handleClickVariant = (variant) => () => {
     enqueueSnackbar(L.tizim.tovar[lan], { variant });
+  };
+
+  const handleClickVariantXato = (variant) => () => {
+    enqueueSnackbar(L.tizim.xato[lan], { variant });
   };
 
   const [razmer, setRazmer] = useState("");
@@ -97,7 +101,7 @@ function FashionStyle({ category }) {
       .catch((er) => console.log(er));
   };
   const gorodFetch = async (id) => {
-   await axios
+    await axios
       .post("http://dems.inone.uz/api/city/get-pagin", {
         limit: 20,
         page: 1,
@@ -115,10 +119,9 @@ function FashionStyle({ category }) {
     setGorod(event.target.value);
   };
   const [jew, setJew] = useState("jewelry");
- 
-  console.log(jew)
+
+  console.log(jew);
   const [mak, setMak] = useState("perfumery");
- 
 
   useEffect(() => {
     regionFetch();
@@ -163,9 +166,13 @@ function FashionStyle({ category }) {
       )
       .then(() => {
         history.push("/Admen");
-        handleClickVariant("success")()
+        handleClickVariant("success")();
       })
-      .catch(() => console.log(localStorage.getItem("token")));
+      .catch((error) => {
+        if (error.response.data.code === 55001) {
+          handleClickVariantXato("error")();
+        }
+      });
   };
 
   const schema = yup.object({
@@ -249,7 +256,9 @@ function FashionStyle({ category }) {
                   <StyledFormControl variant="filled" sx={{ minWidth: 120 }}>
                     <Select value={tur} onChange={handleTur}>
                       {val.map((el) => (
-                        <StyledMenuItem value={el._id}>{el.name}</StyledMenuItem>
+                        <StyledMenuItem value={el._id}>
+                          {el.name}
+                        </StyledMenuItem>
                       ))}
                     </Select>
                   </StyledFormControl>
@@ -257,17 +266,29 @@ function FashionStyle({ category }) {
                   <> </>
                 ) : mobil === "accessories" ? (
                   <StyledFormControl variant="filled" sx={{ minWidth: 120 }}>
-                    <Select value={jew} onChange={(e) => setJew(e.target.value)}>
+                    <Select
+                      value={jew}
+                      onChange={(e) => setJew(e.target.value)}
+                    >
                       <StyledMenuItem value="jewelry">jewelry</StyledMenuItem>
                       <StyledMenuItem value="bags">bags</StyledMenuItem>
-                      <StyledMenuItem value="other-accessories">other-accessories</StyledMenuItem>
+                      <StyledMenuItem value="other-accessories">
+                        other-accessories
+                      </StyledMenuItem>
                     </Select>
                   </StyledFormControl>
                 ) : mobil === "beauty-and-health" ? (
                   <StyledFormControl variant="filled" sx={{ minWidth: 120 }}>
-                    <Select value={mak} onChange={(e) => setMak(e.target.value)}>
-                      <StyledMenuItem value="makeup-accessories">makeup-accessories</StyledMenuItem>
-                      <StyledMenuItem value="perfumery">perfumery</StyledMenuItem>
+                    <Select
+                      value={mak}
+                      onChange={(e) => setMak(e.target.value)}
+                    >
+                      <StyledMenuItem value="makeup-accessories">
+                        makeup-accessories
+                      </StyledMenuItem>
+                      <StyledMenuItem value="perfumery">
+                        perfumery
+                      </StyledMenuItem>
                     </Select>
                   </StyledFormControl>
                 ) : (
@@ -276,7 +297,9 @@ function FashionStyle({ category }) {
               </ContentRow>
               <StyledFormControl variant="filled" sx={{ mt: 3, minWidth: 120 }}>
                 <Select value={novy} onChange={handleNovy}>
-                  <StyledMenuItem value="new">{L.tovarAdd.fash.now[lan]}</StyledMenuItem>
+                  <StyledMenuItem value="new">
+                    {L.tovarAdd.fash.now[lan]}
+                  </StyledMenuItem>
                   <StyledMenuItem value="old">В/У</StyledMenuItem>
                 </Select>
               </StyledFormControl>
@@ -338,7 +361,10 @@ function FashionStyle({ category }) {
                 {L.tovarAdd.cars.mesto[lan]} *
               </Typography>
               <ContentRow>
-                <StyledFormControl variant="filled" sx={{mb:3, minWidth: 120 }}>
+                <StyledFormControl
+                  variant="filled"
+                  sx={{ mb: 3, minWidth: 120 }}
+                >
                   <InputLabel>{L.tovarAdd.cars.region[lan]} *</InputLabel>
                   <Select
                     value={region}
@@ -346,7 +372,9 @@ function FashionStyle({ category }) {
                     onChange={handleRegionChange}
                   >
                     {regions.map((Region) => (
-                      <StyledMenuItem value={Region._id}>{Region.name}</StyledMenuItem>
+                      <StyledMenuItem value={Region._id}>
+                        {Region.name}
+                      </StyledMenuItem>
                     ))}
                   </Select>
                 </StyledFormControl>
@@ -407,13 +435,13 @@ function FashionStyle({ category }) {
               </p>
             </MenuContent>
             <AcceptMaxFiles />
-            <Box sx={{ mt: 2, mb:4 }}>
+            <Box sx={{ mt: 2, mb: 4 }}>
               <StyledButton
                 onClick={handleSubmit(handlSubmit)}
-                
                 variant="contained"
                 variant="contained"
-              >{L.tovarAdd.cars.but12[lan]}
+              >
+                {L.tovarAdd.cars.but12[lan]}
               </StyledButton>
             </Box>
           </Container>

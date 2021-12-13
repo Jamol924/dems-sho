@@ -158,7 +158,7 @@ function MyAdss() {
                 </LocationIcon>
                 <LocationTitle>{dat.region_name}</LocationTitle>
               </CardLocation>
-              <CardPrice>${dat.price}</CardPrice>
+              <CardPrice>{dat.price}  {dat.currency}</CardPrice>
             </CardMenu>
             <CardIcon>
               <Link to={`/card/${dat._id}`}>

@@ -46,6 +46,9 @@ function Home({ category }) {
   const handleClickVariant = (variant) => () => {
     enqueueSnackbar(L.tizim.tovar[lan], { variant });
   };
+  const handleClickVariantXato = (variant) => () => {
+    enqueueSnackbar(L.tizim.xato[lan], { variant });
+  };
 
   const [glavne, setGlavne] = useState("home");
   const handleGlavneChange = (el) => {
@@ -235,7 +238,11 @@ function Home({ category }) {
         history.push("/Admen");
         handleClickVariant("success")();
       })
-      .catch(() => console.log(localStorage.getItem("token")));
+      .catch((error) => {
+        if (error.response.data.code === 55001) {
+          handleClickVariantXato("error")();
+        }
+      });
   };
 
   const schema = yup.object({
@@ -532,19 +539,11 @@ function Home({ category }) {
                 >
                   {names.map((tp) => (
                     <StyledMenuItem key={tp._id} value={tp.name}>
-                      {/* <Checkbox checked={personName.indexOf(tp.name) > -1} /> */}
                       <ListItemText primary={tp.name} />
                     </StyledMenuItem>
                   ))}
                 </Select>
               </StyledFormControl>
-
-              {/* <Autocomplete
-                multiple
-                options={names}
-                getOptionLabel={(option) => `$`}
-                defaultValue={[names[13]]}
-              /> */}
               <Controller
                 name="rya"
                 control={control}

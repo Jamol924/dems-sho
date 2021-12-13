@@ -7,6 +7,7 @@ import { Typography } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import L from "../../../locale/language.json"
 import { setImag } from "../../../redux/active/productActions";
+import { Demo } from "../../../components/UploadImg";
 
 const uploader = async (file) => {
   try {

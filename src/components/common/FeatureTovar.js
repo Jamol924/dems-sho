@@ -73,7 +73,7 @@ const FatureTovar = () => {
                 </LocationIcon>
                 <LocationTitle>{elm.region_name}</LocationTitle>
               </CardLocation>
-              <CardPrice>${elm.price}</CardPrice>
+              <CardPrice>{elm.price} {elm.currency}</CardPrice>
             </CardMenu>
           </Wrapper>
         </Link>

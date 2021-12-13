@@ -44,6 +44,9 @@ function Businesservice({ category }) {
   const handleClickVariant = (variant) => () => {
     enqueueSnackbar(L.tizim.tovar[lan], { variant });
   };
+  const handleClickVariantXato = (variant) => () => {
+    enqueueSnackbar(L.tizim.xato[lan], { variant });
+  };
 
   const [gorod, setGorod] = useState("");
   const [gorods, setGorods] = useState([]);
@@ -123,7 +126,11 @@ function Businesservice({ category }) {
         history.push("/Admen");
         handleClickVariant("success")()
       })
-      .catch(() => console.log(localStorage.getItem("token")));
+      .catch((error) => {
+        if (error.response.data.code === 55001) {
+          handleClickVariantXato("error")();
+        }
+      });
   };
 
   const schema = yup.object({

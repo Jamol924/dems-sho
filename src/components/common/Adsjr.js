@@ -69,7 +69,7 @@ const Adsjr = ({ datas }) => {
                 </LocationIcon>
                 <LocationTitle>{dat.region_name}</LocationTitle>
               </CardLocation>
-              <CardPrice>${dat.price}</CardPrice>
+              <CardPrice>{dat.price} {dat.currency}</CardPrice>
             </CardMenu>
           </Wrapper>
         </Link>

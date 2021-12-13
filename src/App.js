@@ -31,9 +31,7 @@ import MyAdss from "./pages/sections/MyProfil/MyAdss";
 import okFilse from "./components/common/okFile";
 import FailFooter from "./components/FailFooter.jsx";
 import "animate.css";
-import LoaderSpinner from "./Loader/loader";
 import { useSelector } from "react-redux";
-import FileUploader from "./components/common/Upload/UploadImages";
 
 const GlobalStyle = createGlobalStyle`
    * {
@@ -52,7 +50,6 @@ body {
 `;
 
 function App() {
-  const CategoreRispons = useSelector((state) => state.CategoreCard.Categore);
   return (
     <SnackbarProvider>
       <Router>
@@ -64,7 +61,7 @@ function App() {
               path="/admen/Cars"
               render={() => (
                 <div className="animate__animated animate__fadeIn">
-                  <TovarCars category="cars" />{" "}
+                  <TovarCars category="cars" />
                 </div>
               )}
             />

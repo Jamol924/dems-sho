@@ -43,6 +43,9 @@ function Jobs({ category }) {
   const handleClickVariant = (variant) => () => {
     enqueueSnackbar(L.tizim.tovar[lan], { variant });
   };
+  const handleClickVariantXato = (variant) => () => {
+    enqueueSnackbar(L.tizim.xato[lan], { variant });
+  };
   const [qaror, setQaror] = useState("offer");
   const handleQaror = (e) => {
     setQaror(e.target.value);
@@ -133,7 +136,11 @@ function Jobs({ category }) {
         history.push("/Admen");
         handleClickVariant("success")();
       })
-      .catch(() => console.log(localStorage.getItem("token")));
+      .catch((error) => {
+        if (error.response.data.code === 55001) {
+          handleClickVariantXato("error")();
+        }
+      });
   };
 
   const schema = yup.object({
@@ -234,18 +241,17 @@ function Jobs({ category }) {
                       {L.tovarAdd.jobs.roz12[lan]}{" "}
                     </StyledMenuItem>
                     <StyledMenuItem value="other">
-                      {L.tovarAdd.jobs.roz13[lan]}{" "}
+                      {L.tovarAdd.jobs.roz13[lan]}
                     </StyledMenuItem>
                   </Select>
                 </StyledFormControl>
                 <StyledFormControl variant="filled" sx={{ minWidth: 120 }}>
                   <Select value={qaror} onChange={handleQaror}>
                     <StyledMenuItem value="offer">
-                      {L.tovarAdd.jobs.offer1[lan]}{" "}
+                      {L.tovarAdd.jobs.offer1[lan]}
                     </StyledMenuItem>
                     <StyledMenuItem value="search">
-                      {" "}
-                      {L.tovarAdd.jobs.offer2[lan]}{" "}
+                      {L.tovarAdd.jobs.offer2[lan]}
                     </StyledMenuItem>
                   </Select>
                 </StyledFormControl>

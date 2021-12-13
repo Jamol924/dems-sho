@@ -34,6 +34,9 @@ export const Tizim = ({ onSuccess }) => {
   const handleClickNumber = (variant) => () => {
     enqueueSnackbar(L.tizim.xatokrit[lon], { variant });
   };
+  const handleClickVariantErr = (variant) => () => {
+    enqueueSnackbar(L.tizim.not[lon], { variant });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -65,7 +68,14 @@ export const Tizim = ({ onSuccess }) => {
           localStorage.setItem("user", JSON.stringify(dd.data.data));
           history.push("/admen");
         })
-        .catch((e) => console.log(e));
+        .catch((error) => {
+          if (error.response.data.code === 56003) {
+            handleClickNumber("error")();
+          } else {
+            handleClickVariantErr("warning")();
+            onSuccess();
+          }
+        });
     }
   };
   const lon = useSelector((state) => state.allLanguage);

@@ -31,6 +31,10 @@ function CarsFeater({dataCard}) {
                   <p>{dataCard.fuel}</p>
                 </div>
                 <div>
+                  <p>{L.item.color[lan]}*</p>
+                  <p>{dataCard.color}</p>
+                </div>
+                <div>
                   <p>{L.item.loc[lan]}</p>
                   <p>
                     {dataCard.region_name} {dataCard.city_name}

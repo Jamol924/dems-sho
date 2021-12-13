@@ -42,6 +42,9 @@ function ChildrensWorld({ category }) {
   const handleClickVariant = (variant) => () => {
     enqueueSnackbar(L.tizim.tovar[lan], { variant });
   };
+  const handleClickVariantXato = (variant) => () => {
+    enqueueSnackbar(L.tizim.xato[lan], { variant });
+  };
   const [novy, setNovy] = useState("new");
   const handleNovy = (e) => {
     setNovy(e.target.value);
@@ -127,7 +130,11 @@ function ChildrensWorld({ category }) {
         history.push("/Admen");
         handleClickVariant("success")()
       })
-      .catch(() => console.log(localStorage.getItem("token")));
+      .catch((error) => {
+        if (error.response.data.code === 55001) {
+          handleClickVariantXato("error")();
+        }
+      });
   };
 
   const schema = yup.object({
