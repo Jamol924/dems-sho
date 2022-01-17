@@ -8,7 +8,7 @@ import { useSnackbar } from "notistack";
 import InputMask from "react-input-mask";
 import { StyledButton } from "../../Admen/MaterialTovar/Tovar";
 import { useDispatch, useSelector } from "react-redux";
-import { countItem } from "../../../../redux/active/productActions";
+import { countItem, tizimValue } from "../../../../redux/active/productActions";
 import L from "../../../../locale/language.json";
 
 export const Tizim = ({ onSuccess }) => {
@@ -65,6 +65,7 @@ export const Tizim = ({ onSuccess }) => {
         .then((dd) => {
           setCounter(true);
           localStorage.setItem("token", JSON.stringify(dd.data.data.token));
+          dispatch(tizimValue(dd.data.data))
           localStorage.setItem("user", JSON.stringify(dd.data.data));
           history.push("/admen");
         })

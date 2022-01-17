@@ -3,12 +3,17 @@ import { Upload } from "antd";
 import ImgCrop from "antd-img-crop";
 import axios from "axios";
 
-const uploader = async (file) => {
-  
+const uploader = (file) => {
   const formData = new FormData();
-  formData.append("file", file[0]);
 
-  await axios
+  console.log(file)
+  file.map((fil) => {
+
+    formData.append("file", fil.name);
+  })
+  
+
+ axios
     .post("http://dems.inone.uz/api/upload-file", formData, {
       headers: {
         Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`,
@@ -20,25 +25,26 @@ const uploader = async (file) => {
 
 export const Demo = () => {
   const [fileList, setFileList] = useState([]);
-  console.log(fileList[0])
   const onChange = ({ fileList: newFileList }) => {
     setFileList(newFileList);
+    uploader(fileList)
   };
 
-  const onPreview = async (file) => {
-    let src = file.url;
-    if (!src) {
-      src = await new Promise((resolve) => {
-        const reader = new FileReader();
-        reader.readAsDataURL(file.originFileObj);
-        reader.onload = () => resolve(reader.result);
-      });
-    }
-    const image = new Image();
-    image.src = src;
-    const imgWindow = window.open(src);
-    imgWindow.document.write(image.outerHTML);
-  };
+  // const onPreview = async (file) => {
+  //   let src = file.url;
+  //   console.log(src)
+  //   if (!src) {
+  //     src = await new Promise((resolve) => {
+  //       const reader = new FileReader();
+  //       reader.readAsDataURL(file.originFileObj);
+  //       reader.onload = () => resolve(reader.result);
+  //     });
+  //   }
+  //   const image = new Image();
+  //   image.src = src;
+  //   const imgWindow = window.open(src);
+  //   imgWindow.document.write(image.outerHTML);
+  // };
 
   return (
     <>
@@ -48,7 +54,7 @@ export const Demo = () => {
           listType="picture-card"
           fileList={fileList}
           onChange={onChange}
-          onPreview={onPreview}
+          // onPreview={onPreview}
         >
           {fileList.length < 5 && "+ Rasim joylang"}
         </Upload>

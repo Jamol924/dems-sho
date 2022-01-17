@@ -12,9 +12,9 @@ const datas = [
         id:"cars",
         img:Cars2,
         title:{
-            uz: "Avtomobillar",
-            ru: "Машины",
-            en: "Cars"
+            uz: "AVTOMOBILLAR",
+            ru: "МАШИНЫ",
+            en: "CARS"
           },
         color:"#166cc9",
     },
@@ -22,9 +22,9 @@ const datas = [
         id:"home",
         img:home,
         title:{
-            uz: "Uylar",
-            ru: "Дом",
-            en: "Home"
+            uz: "UYLAR",
+            ru: "ДОМА",
+            en: "HOUSES"
           },
         color:"#169ec9",
     },
@@ -32,9 +32,9 @@ const datas = [
         id:"electronics",
         img:elictronical,
         title: {
-            uz: "Elektronika",
-            ru: "Электроника",
-            en: "Electronics"
+            uz: "ELEKTRONIKA",
+            ru: "ЭЛЕКТРОНИКА",
+            en: "ELECTRONICS"
           },
         color:"#baafff",
     },
@@ -42,9 +42,9 @@ const datas = [
         id:"jobs",
         img:jobs,
         title:{
-            uz: "Ishlar",
-            ru: "Вакансии",
-            en: "Jobs"
+            uz: "ISHLAR",
+            ru: "ВАКАНСИИ",
+            en: "JOBS"
           },
         color:"#857c6f",
     },
@@ -52,9 +52,9 @@ const datas = [
         id:"fashion-style",
         img:fashion2,
         title:{
-            uz: "Moda uslubi",
-            ru: "Модный стиль",
-            en: "Fashion-style"
+            uz: "MODA",
+            ru: "МОДА",
+            en: "FASHION"
           },
         color:"#92b5f8",
     },
@@ -62,9 +62,9 @@ const datas = [
         id:"childrens-world",
         img:children,
         title:{
-            uz: "Bolalar dunyosi",
-            ru: "Детский мир",
-            en: "Childrens-world"
+            uz: "BOLALAR DUNYOSI",
+            ru: "ДЕТСКИЙ МИР",
+            en: "CHILDREN'S WORLD"
           },
         color:"#92dff8",
     },
@@ -72,9 +72,9 @@ const datas = [
         id:"business-service",
         img:busines,
         title:{
-            uz: "Biznes-xizmat",
-            ru: "Бизнес Сервис",
-            en: "Business-service"
+            uz: "BIZNES XIZMAT",
+            ru: "БИЗНЕС СЕРВИС",
+            en: "BUSINESS SERVICE"
           },
         color:"#f8e792",
     },
@@ -82,9 +82,9 @@ const datas = [
         id:"agriculture",
         img:agriculture2,
         title:{
-            uz: "Qishloq xo'jaligi",
-            ru: "Сельское хозяйство",
-            en: "Agriculture"
+            uz: "QISHLOQ XO'JALIGI",
+            ru: "СЕЛЬСКОЕ ХОЗЯЙСТВО",
+            en: "AGRICULTURE"
           },
         color:"#5c96b7",
     },

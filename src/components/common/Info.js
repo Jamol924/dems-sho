@@ -30,22 +30,14 @@ const Info = () => {
         <h1>Dems</h1>
         <p>{L.footer.name[lan]}</p>
       </FlexItem>
+
       <FlexItem>
         <h2>{L.footer.how[lan]}</h2>
         <div className="line" />
         <ul>
-          <li>
-            <a href="#">{L.footer.sel[lan]}</a>
-          </li>
-          <li>
-            <a href="#">{L.footer.buy[lan]}</a>
-          </li>
-          <li>
-            <a href="#">{L.footer.banner[lan]}</a>
-          </li>
-          <li>
-            <a href="#">{L.footer.pro[lan]}</a>
-          </li>
+          <li>{L.footer.sel[lan]}</li>
+          <li>{L.footer.buy[lan]}</li>
+          <li>{L.footer.banner[lan]}</li>
         </ul>
       </FlexItem>
       <FlexItem>
@@ -90,13 +82,22 @@ const Info = () => {
         <div className="line" />
         <ul>
           <li>
-            <Link to="/failFooter">
             <a href="#">{L.footer.liv[lan]}</a>
-            </Link>
           </li>
           <li>
-            <a href="#">{L.footer.ter[lan]}</a>
+            <Link to="/failFooter">
+              <a href="#">{L.footer.ter[lan]}</a>
+            </Link>
           </li>
+        </ul>
+      </FlexItem>
+      <FlexItem>
+        <h2>{L.footer.foy[lan]}</h2>
+        <div className="line" />
+        <ul>
+          <li>{L.footer.foy1[lan]}</li>
+          <li>{L.footer.foy2[lan]}</li>
+          <li>{L.footer.foy3[lan]}</li>
         </ul>
       </FlexItem>
     </Wrapper>
@@ -162,18 +163,19 @@ const Wrapper = styled.div`
 `;
 
 const FlexItem = styled.div`
-  width: 20%;
+  width: 17.6%;
   padding-right: 20px;
   margin-top: 71px;
-  && > h1{
+  && > h1 {
     height: 45px;
   }
-  && > h2{
+  && > h2 {
     height: 36px;
   }
-  && > ul{
-    li{
-      button{
+  && > ul {
+    li {
+      color: #999999;
+      button {
         text-align: inherit;
       }
     }
@@ -308,7 +310,6 @@ const FlexItem = styled.div`
     ul {
       list-style: none;
       margin-top: 40px;
-
     }
     li {
       font-weight: 100;
@@ -328,7 +329,7 @@ const FlexItem = styled.div`
       padding-top: 0px;
       line-height: 1.4;
       /* margin-top: 25px; */
-  }
+    }
   }
 `;
 

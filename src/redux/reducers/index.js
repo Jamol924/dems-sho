@@ -11,6 +11,7 @@ import {
   setElim,
   productFeature,
   setScrol,
+  setTizim,
 } from "./productReducer";
 
 const reducer = combineReducers({
@@ -25,6 +26,7 @@ const reducer = combineReducers({
   allSetElim: setElim,
   allProduc:productFeature,
   allScrol:setScrol,
+  allTizim:setTizim,
 });
 
 export default reducer;

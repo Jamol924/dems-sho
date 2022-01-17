@@ -310,13 +310,13 @@ function Cars({category, dataCard}) {
                     label="Age"
                     onChange={handleTolivoChange}
                   >
-                    <StyledMenuItem value={"Chevrolet"}>
+                    <StyledMenuItem value={"Yoqilg'i"}>
                       {L.tovarAdd.cars.toplvo[lan]}{" "}
                     </StyledMenuItem>
-                    <StyledMenuItem value={"Daevo"}>
+                    <StyledMenuItem value={"Benzin"}>
                       {L.tovarAdd.cars.ben[lan]}
                     </StyledMenuItem>
-                    <StyledMenuItem value={"Baz"}>
+                    <StyledMenuItem value={"Gaz"}>
                       {L.tovarAdd.cars.gaz[lan]}{" "}
                     </StyledMenuItem>
                   </Select>
@@ -348,7 +348,7 @@ function Cars({category, dataCard}) {
                     height: "60px",
                     marginRight: "20px",
                   }}
-                  value="white"
+                  value="Oq"
                   aria-label="left aligned"
                 ></StyledToggleButton>
                 <StyledToggleButton
@@ -358,7 +358,7 @@ function Cars({category, dataCard}) {
                     height: "60px",
                     marginRight: "20px",
                   }}
-                  value="red"
+                  value="Qizil"
                   aria-label="centered"
                 ></StyledToggleButton>
                 <StyledToggleButton
@@ -368,7 +368,7 @@ function Cars({category, dataCard}) {
                     height: "60px",
                     marginRight: "20px",
                   }}
-                  value="green"
+                  value="Qora"
                   aria-label="right aligned"
                 ></StyledToggleButton>
                 <StyledToggleButton
@@ -378,17 +378,7 @@ function Cars({category, dataCard}) {
                     height: "60px",
                     marginRight: "20px",
                   }}
-                  value="black"
-                  aria-label="right aligned"
-                ></StyledToggleButton>
-                <StyledToggleButton
-                  sx={{
-                    backgroundColor: "yellow",
-                    width: "60px",
-                    height: "60px",
-                    marginRight: "20px",
-                  }}
-                  value="yellow"
+                  value="Metalik"
                   aria-label="right aligned"
                 ></StyledToggleButton>
               </ToggleButtonGroup>

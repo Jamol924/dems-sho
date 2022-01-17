@@ -57,7 +57,7 @@ export const CategoryList = styled.div`
   font-weight: bold;
   font-family: "Quicksand", sans-serif;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 70px;
   @media (max-width: 550px) {
     padding-top: 0px;
     line-height: 10px;

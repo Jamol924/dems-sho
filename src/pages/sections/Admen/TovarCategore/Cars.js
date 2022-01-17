@@ -10,15 +10,14 @@ import { AcceptMaxFiles } from "../../MyProfil/DropZovn";
 import { useHistory } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm, Controller } from "react-hook-form";
+import FileUploader from '../../../../components/common/Upload/UploadImages.js'
 import * as yup from "yup";
 import axios from "axios";
 import L from "../../../../locale/language.json";
 import {
   InputLabel,
-  MenuItem,
   Select,
   TextareaAutosize,
-  ToggleButton,
   ToggleButtonGroup,
   Typography,
 } from "@mui/material";
@@ -35,6 +34,7 @@ import {
 } from "../MaterialTovar/Tovar.jsx";
 import MinNav from "../../../../components/common/MineNavbar/MinNav";
 import { useSnackbar } from "notistack";
+import { Demo } from "../../../../components/UploadImg";
 
 function Cars(props) {
   const lan = useSelector((state) => state.allLanguage);
@@ -363,7 +363,7 @@ function Cars(props) {
                     width: "60px",
                     height: "60px",
                   }}
-                  value="white"
+                  value="Oq"
                   aria-label="left aligned"
                 ></StyledToggleButton>
                 <StyledToggleButton
@@ -371,7 +371,7 @@ function Cars(props) {
                     width: "60px",
                     height: "60px",
                   }}
-                  value="red"
+                  value="Qizil"
                   aria-label="centered"
                 ></StyledToggleButton>
                 <StyledToggleButton
@@ -379,7 +379,7 @@ function Cars(props) {
                     width: "60px",
                     height: "60px",
                   }}
-                  value="green"
+                  value="Qora"
                   aria-label="left aligned"
                 ></StyledToggleButton>
                 <StyledToggleButton
@@ -387,7 +387,7 @@ function Cars(props) {
                     width: "60px",
                     height: "60px",
                   }}
-                  value="black"
+                  value="Metailk"
                   aria-label="left aligned"
                 ></StyledToggleButton>
               </ToggleButtonGroup>
@@ -506,6 +506,7 @@ function Cars(props) {
               </p>
             </MenuContent>
             <AcceptMaxFiles />
+            <Demo/>
             <Box sx={{ mt: 2, mb: 4 }}>
               <StyledButton
                 onClick={handleSubmit(handlSubmit)}

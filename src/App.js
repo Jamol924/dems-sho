@@ -30,6 +30,8 @@ import Setting from "./pages/sections/MyProfil/Setting";
 import MyAdss from "./pages/sections/MyProfil/MyAdss";
 import okFilse from "./components/common/okFile";
 import FailFooter from "./components/FailFooter.jsx";
+// import 'antd-styled/dist/index.css'
+import 'antd/dist/antd.css';
 import "animate.css";
 import { useSelector } from "react-redux";
 

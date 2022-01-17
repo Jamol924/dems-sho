@@ -11,5 +11,6 @@ export  const ActionType = {
   El_VALUE:"El_VALUE",
   SET_PRODFEAT:"SET_PRODFEAT",
   SET_SCROL:"SET_SCROL",
+  SET_TIZIM:"SET_TIZIM",
 };
 

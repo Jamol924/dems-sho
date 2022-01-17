@@ -7,6 +7,13 @@ export const setImag = (produc) =>{
         payload: produc,
     }
 };
+
+export const tizimValue = (produc) =>{
+    return{
+        type: ActionType.SET_TIZIM,
+        payload: produc,
+    }
+};
 export const Scrol = (pr) =>{
     return{
         type: ActionType.SET_SCROL,

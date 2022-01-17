@@ -60,6 +60,14 @@
         return state;
     }
   };
+  export const setTizim = (state = [], { type, payload }) => {
+    switch (type) {
+      case ActionType.SET_TIZIM:
+        return { ...state, ...payload };
+      default:
+        return state;
+    }
+  };
   export const setImages = (state = {}, { type, payload }) => {
     switch (type) {
       case ActionType.SET_IMAG:

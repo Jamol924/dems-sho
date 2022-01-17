@@ -20,7 +20,6 @@ import {
   ButtonLink,
   LinkStyled,
 } from "../components/common/MaterialComponent/AboutSection";
-import { Link } from "react-router-dom";
 import L from "../locale/language.json";
 
 const Search = () => {

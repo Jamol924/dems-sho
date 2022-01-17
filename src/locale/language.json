@@ -541,151 +541,151 @@
         "en": "Publish"
       }
     },
-    "home":{
-      "name":{
-        "uz":"Uy tafsilotlari",
-        "ru":"Детали дома",
-        "en":"House details"
+    "home": {
+      "name": {
+        "uz": "Uy tafsilotlari",
+        "ru": "Детали дома",
+        "en": "House details"
       },
-      "glav1":{
-        "uz":"uy",
-        "ru":"Главная",
-        "en":"home"
+      "glav1": {
+        "uz": "uy",
+        "ru": "Главная",
+        "en": "home"
       },
-      "glav2":{
-        "uz":"Kvartira",
-        "ru":"Квартера",
-        "en":"Apartment"
+      "glav2": {
+        "uz": "Kvartira",
+        "ru": "Квартера",
+        "en": "Apartment"
       },
-      "glav3":{
-        "uz":"Yer",
-        "ru":"Земля",
-        "en":"Earth"
+      "glav3": {
+        "uz": "Yer",
+        "ru": "Земля",
+        "en": "Earth"
       },
-      "glav4":{
-        "uz":"Garaj",
-        "ru":"Гараж",
-        "en":"Garage"
+      "glav4": {
+        "uz": "Garaj",
+        "ru": "Гараж",
+        "en": "Garage"
       },
-      "aren1":{
-        "uz":"Ijaralar",
-        "ru":"Аренда",
-        "en":"Rent"
+      "aren1": {
+        "uz": "Ijaralar",
+        "ru": "Аренда",
+        "en": "Rent"
       },
-      "aren2":{
-        "uz":"Kunlik ijara",
-        "ru":"Аренда посуточно",
-        "en":"Daily rent"
+      "aren2": {
+        "uz": "Kunlik ijara",
+        "ru": "Аренда посуточно",
+        "en": "Daily rent"
       },
-      "aren3":{
-        "uz":"Sotish",
-        "ru":"Продажа",
-        "en":"Sale"
+      "aren3": {
+        "uz": "Sotish",
+        "ru": "Продажа",
+        "en": "Sale"
       },
-      "komnat":{
-        "uz":"xonalar soni",
-        "ru":"количество комнат",
-        "en":"number of rooms"
+      "komnat": {
+        "uz": "xonalar soni",
+        "ru": "количество комнат",
+        "en": "number of rooms"
       },
-      "god":{
-        "uz":"Qurilish / yetkazib berish yili",
-        "ru":"Год постройки /сдачи",
-        "en":"Year of construction / delivery"
+      "god": {
+        "uz": "Qurilish / yetkazib berish yili",
+        "ru": "Год постройки /сдачи",
+        "en": "Year of construction / delivery"
       },
-      "has":{
-        "uz":"Mebellari bor",
-        "ru":"Есть мебель",
-        "en":"Has furniture "
+      "has": {
+        "uz": "Mebellari bor",
+        "ru": "Есть мебель",
+        "en": "Has furniture "
       },
-      "has2":{
-        "uz":"Mebel yo'q",
-        "ru":"Без мебели",
-        "en":"No furniture "
+      "has2": {
+        "uz": "Mebel yo'q",
+        "ru": "Без мебели",
+        "en": "No furniture "
       },
-      "ot":{
-        "uz":"yangilangan",
-        "ru":"отремонтирован",
-        "en":"renovated"
+      "ot": {
+        "uz": "yangilangan",
+        "ru": "отремонтирован",
+        "en": "renovated"
       },
-      "ot2":{
-        "uz":"Ta'mirlanmagan",
-        "ru":"Не ремонтируется",
-        "en":"Not being repaired"
+      "ot2": {
+        "uz": "Ta'mirlanmagan",
+        "ru": "Не ремонтируется",
+        "en": "Not being repaired"
       },
-      "have":{
-        "uz":"Brokerlik to'loviga ega bo'ling",
-        "ru":"Есть брокерская комиссия",
-        "en":"Have brokerage fee"
+      "have": {
+        "uz": "Brokerlik to'loviga ega bo'ling",
+        "ru": "Есть брокерская комиссия",
+        "en": "Have brokerage fee"
       },
-      "have2":{
-        "uz":"Brokerlik toʻlovi yoʻq",
-        "ru":"Без брокерской комиссии",
-        "en":"No brokerage fee"
+      "have2": {
+        "uz": "Brokerlik toʻlovi yoʻq",
+        "ru": "Без брокерской комиссии",
+        "en": "No brokerage fee"
       },
-      "krpch1":{
-        "uz":"g'isht",
-        "ru":"кирпичный",
-        "en":"brick"
+      "krpch1": {
+        "uz": "g'isht",
+        "ru": "кирпичный",
+        "en": "brick"
       },
-      "krpch2":{
-        "uz":"paneli",
-        "ru":"панельный",
-        "en":"panel"
+      "krpch2": {
+        "uz": "paneli",
+        "ru": "панельный",
+        "en": "panel"
       },
-      "krpch3":{
-        "uz":"Monolit",
-        "ru":"Монолитный",
-        "en":"Monolithic"
+      "krpch3": {
+        "uz": "Monolit",
+        "ru": "Монолитный",
+        "en": "Monolithic"
       },
-      "krpch4":{
-        "uz":"Bloklangan",
-        "ru":"Блочный",
-        "en":"Blocky"
+      "krpch4": {
+        "uz": "Bloklangan",
+        "ru": "Блочный",
+        "en": "Blocky"
       },
-      "krpch5":{
-        "uz":"Boshqa",
-        "ru":"Другой",
-        "en":"Another"
+      "krpch5": {
+        "uz": "Boshqa",
+        "ru": "Другой",
+        "en": "Another"
       },
-      "vsota":{
-        "uz":"ship balandligi (m)",
-        "ru":"высота потолков (m)",
-        "en":"ceiling height (m)"
+      "vsota": {
+        "uz": "ship balandligi (m)",
+        "ru": "высота потолков (m)",
+        "en": "ceiling height (m)"
       },
-      "etaj":{
-        "uz":"Qavat",
-        "ru":"Этаж",
-        "en":"Floor"
+      "etaj": {
+        "uz": "Qavat",
+        "ru": "Этаж",
+        "en": "Floor"
       },
-      "etajd":{
-        "uz":"Uyning qavatlar soni",
-        "ru":"Этажность дома",
-        "en":"Number of storeys of the house"
+      "etajd": {
+        "uz": "Uyning qavatlar soni",
+        "ru": "Этажность дома",
+        "en": "Number of storeys of the house"
       },
-      "komfort":{
-        "uz":"Qulayliklar",
-        "ru":"Комфорт",
-        "en":"Comforts"
+      "komfort": {
+        "uz": "Qulayliklar",
+        "ru": "Комфорт",
+        "en": "Comforts"
       },
-      "ryadom":{
-        "uz":"Yaqin atrofda",
-        "ru":"Рядом есть",
-        "en":"There is"
+      "ryadom": {
+        "uz": "Yaqin atrofda",
+        "ru": "Рядом есть",
+        "en": "There is"
       },
-      "razmer":{
-        "uz":"",
-        "ru":"",
-        "en":""
+      "razmer": {
+        "uz": "",
+        "ru": "",
+        "en": ""
       },
-      "razmer1":{
-        "uz":"Hajmi (m) 2",
-        "ru":"Размер (m)2",
-        "en":"Size (m) 2"
+      "razmer1": {
+        "uz": "Hajmi (m) 2",
+        "ru": "Размер (m)2",
+        "en": "Size (m) 2"
       },
-      "razmer2":{
-        "uz":"Mavjud (m) 2",
-        "ru":"Доступный (m)2",
-        "en":"Available (m) 2"
+      "razmer2": {
+        "uz": "Mavjud (m) 2",
+        "ru": "Доступный (m)2",
+        "en": "Available (m) 2"
       }
     },
     "elictorin": {
@@ -856,324 +856,341 @@
         }
       }
     },
-    "chil":{
-      "name":{
-        "uz":"Bolalar dunyosi",
-        "ru":"Детский мир",
-        "en":"Child's world"
+    "chil": {
+      "name": {
+        "uz": "Bolalar dunyosi",
+        "ru": "Детский мир",
+        "en": "Child's world"
       },
-      "clot1":{
-        "uz":"bolalar kiyimlari",
-        "ru":"детская одежда",
-        "en":"childrens-clothing"
+      "clot1": {
+        "uz": "bolalar kiyimlari",
+        "ru": "детская одежда",
+        "en": "childrens-clothing"
       },
-      "clot2":{
-        "uz":"bollalar poyapzali",
-        "ru":"детские ботинки",
-        "en":"childrens-shoes"
+      "clot2": {
+        "uz": "bollalar poyapzali",
+        "ru": "детские ботинки",
+        "en": "childrens-shoes"
       },
-      "clot3":{
-        "uz":"bolalar aravachasi",
-        "ru":"детская коляска",
-        "en":"childrens-stroller"
+      "clot3": {
+        "uz": "bolalar aravachasi",
+        "ru": "детская коляска",
+        "en": "childrens-stroller"
       },
-      "clot4":{
-        "uz":"bolalar uchun avtomobil o'rindiqlari",
-        "ru":"детские автокресла",
-        "en":"childrens-car-seats"
+      "clot4": {
+        "uz": "bolalar uchun avtomobil o'rindiqlari",
+        "ru": "детские автокресла",
+        "en": "childrens-car-seats"
       },
-      "clot5":{
-        "uz":"bolalar mebellari",
-        "ru":"детская мебель",
-        "en":"childrens-furniture"
+      "clot5": {
+        "uz": "bolalar mebellari",
+        "ru": "детская мебель",
+        "en": "childrens-furniture"
       },
-      "clot6":{
-        "uz":"o'yinchoqlar",
-        "ru":"игрушки",
-        "en":"toys"
+      "clot6": {
+        "uz": "o'yinchoqlar",
+        "ru": "игрушки",
+        "en": "toys"
       },
-      "clot7":{
-        "uz":"bolalar transporti",
-        "ru":"детский транспорт",
-        "en":"childrens-transport"
+      "clot7": {
+        "uz": "bolalar transporti",
+        "ru": "детский транспорт",
+        "en": "childrens-transport"
       },
-      "clot8":{
-        "uz":"oziqlantirish",
-        "ru":"кормление",
-        "en":"feeding"
+      "clot8": {
+        "uz": "oziqlantirish",
+        "ru": "кормление",
+        "en": "feeding"
       },
-      "clot9":{
-        "uz":"boshqa",
-        "ru":"Другие",
-        "en":"other"
+      "clot9": {
+        "uz": "boshqa",
+        "ru": "Другие",
+        "en": "other"
       }
     },
-    "bus":{
-      "name":{
-        "uz":"Biznes va xizmatlar",
-        "ru":"Бизнес & Услуги",
-        "en":"Business & Services"
+    "bus": {
+      "name": {
+        "uz": "Biznes va xizmatlar",
+        "ru": "Бизнес & Услуги",
+        "en": "Business & Services"
       },
-      "bustov":{
-        "bus1":{
-          "uz":"moliyaviy xizmatlar",
-          "ru":"финансовые услуги",
-          "en":"financial-services"
+      "bustov": {
+        "bus1": {
+          "uz": "moliyaviy xizmatlar",
+          "ru": "финансовые услуги",
+          "en": "financial-services"
         },
-        "bus2":{
-          "uz":"transport - ijara",
-          "ru":"аренда транспорта",
-          "en":"transportation-rental"
+        "bus2": {
+          "uz": "transport - ijara",
+          "ru": "аренда транспорта",
+          "en": "transportation-rental"
         },
-        "bus3":{
-          "uz":"reklama-bosma-marketing-internet",
-          "ru":"реклама-полиграфия-маркетинг-Интернет",
-          "en":"adverising-printing-marketing-internet"
+        "bus3": {
+          "uz": "reklama-bosma-marketing-internet",
+          "ru": "реклама-полиграфия-маркетинг-Интернет",
+          "en": "adverising-printing-marketing-internet"
         },
-        "bus4":{
-          "uz":"qurilmalar",
-          "ru":"устройства",
-          "en":"devices"
+        "bus4": {
+          "uz": "qurilmalar",
+          "ru": "устройства",
+          "en": "devices"
         },
-        "bus5":{
-          "uz":"ta'lim - sport",
-          "ru":"образование-спорт",
-          "en":"education-sports"
+        "bus5": {
+          "uz": "ta'lim - sport",
+          "ru": "образование-спорт",
+          "en": "education-sports"
         },
-        "bus6":{
-          "uz":"hayvonlarga xizmat ko'rsatish",
-          "ru":"зоосервис",
-          "en":"animal-services"
+        "bus6": {
+          "uz": "hayvonlarga xizmat ko'rsatish",
+          "ru": "зоосервис",
+          "en": "animal-services"
         },
-        "bus7":{
-          "uz":"turizm",
-          "ru":"туризм",
-          "en":"tourism"
+        "bus7": {
+          "uz": "turizm",
+          "ru": "туризм",
+          "en": "tourism"
         },
-        "bus8":{
-          "uz":"tarjimon xizmatlari",
-          "ru":"услуги переводчика",
-          "en":"interpreter-services"
+        "bus8": {
+          "uz": "tarjimon xizmatlari",
+          "ru": "услуги переводчика",
+          "en": "interpreter-services"
         },
-        "bus9":{
-          "uz":"texnik xizmat ko'rsatish-ta'mirlash-uskunalar",
-          "ru":"техническое обслуживание-ремонт оборудования",
-          "en":"maintenance-repair-of-equipment"
+        "bus9": {
+          "uz": "texnik xizmat ko'rsatish-ta'mirlash-uskunalar",
+          "ru": "техническое обслуживание-ремонт оборудования",
+          "en": "maintenance-repair-of-equipment"
         },
-        "bus10":{
-          "uz":"yuridik xizmatlar",
-          "ru":"юридические услуги",
-          "en":"juridical-services"
+        "bus10": {
+          "uz": "yuridik xizmatlar",
+          "ru": "юридические услуги",
+          "en": "juridical-services"
         },
-        "bus11":{
-          "uz":"boshqalar",
-          "ru":"другие",
-          "en":"others"
+        "bus11": {
+          "uz": "boshqalar",
+          "ru": "другие",
+          "en": "others"
         }
       }
     },
-    "agr":{
-      "name":{
-        "uz":"Qishloq xo'jaligi",
-        "ru":"Сельское хозяйство",
-        "en":"Agriculture"
+    "agr": {
+      "name": {
+        "uz": "Qishloq xo'jaligi",
+        "ru": "Сельское хозяйство",
+        "en": "Agriculture"
       },
-      "clot1":{
-        "uz":"poliz ekinlari",
-        "ru":"бахчевые культуры",
-        "en":"melon-crops"
+      "clot1": {
+        "uz": "poliz ekinlari",
+        "ru": "бахчевые культуры",
+        "en": "melon-crops"
       },
-      "clot2":{
-        "uz":"yormalar",
-        "ru":"хлопья",
-        "en":"cereals"
+      "clot2": {
+        "uz": "yormalar",
+        "ru": "хлопья",
+        "en": "cereals"
       },
-      "clot3":{
-        "uz":"mevalar",
-        "ru":"фрукты",
-        "en":"fruits"
+      "clot3": {
+        "uz": "mevalar",
+        "ru": "фрукты",
+        "en": "fruits"
       },
-      "clot4":{
-        "uz":"boshqalar",
-        "ru":"others",
-        "en":"others"
+      "clot4": {
+        "uz": "boshqalar",
+        "ru": "others",
+        "en": "others"
       }
     }
   },
-  "footer":{
-    "name":{
-      "uz":"Dems - bu bepul e'lonlar va online sotish va sotib olish xizmatlari hisoblanib, bu yerda siz vaqtingiz va pulingizni tejaysiz, biz bilan birga bo'ling !",
-      "ru":"Dems - это служба бесплатных объявлений и онлайн-продажи и покупки, где вы экономите время и деньги, следите за обновлениями!",
-      "en":"Dems is a free classifieds and online sale and purchase service where you save time and money, stay with us! "
+  "footer": {
+    "name": {
+      "uz": "Dems - bu mutlaqo bepul sayt bo'lib, siz har qanday turdagi mahsulotni sotib olishingiz va sotishingiz mumkin. Ushbu sayt sizga pul va vaqtni tejaydi. Keraksiz muammolarsiz savdo qiling!",
+      "ru": "Dems - это абсолютно бесплатный сайт, на котором вы можете покупать и продавать любые товары. Этот сайт сэкономит вам деньги и время. Торгуйте без лишних хлопот!",
+      "en": "Dems is an absolutely free site where you can buy and sell any type of product. This site will save you money and time. Trade without unnecessary hassles!"
     },
-    "how":{
-      "uz":"Qanday qilib tez sotish",
-      "ru":"Как быстро продавать",
-      "en":"How tel Sell Fast"
+    "how": {
+      "uz": "Qanday qilib tez sotish",
+      "ru": "Как быстро продавать",
+      "en": "How tel Sell Fast"
     },
-    "infor":{
-      "uz":"Hamkor",
-      "ru":"Партнер",
-      "en":"Partner"
+    "foy": {
+      "uz": "Afzalliklar",
+      "ru": "Преимущества",
+      "en": "Advantages"
     },
-    "help":{
-      "uz":"Yordam va yordam",  
-      "ru":"Помощь и поддержка",
-      "en":"Help & Support"
+    "infor": {
+      "uz": "Hamkor",
+      "ru": "Партнер",
+      "en": "Partner"
     },
-    "sel":{
-      "uz":"Sotish bo'yicha maslahatlar",
-      "ru":"Советы по продаже",
-      "en":"Selling Tips"
+    "help": {
+      "uz": "Yordam va yordam",
+      "ru": "Помощь и поддержка",
+      "en": "Help & Support"
     },
-    "buy":{
-      "uz":"Tezda sotib oling va soting",
-      "ru":"Покупайте и продавайте быстро",
-      "en":"Buy and Sell Quickly"
+    "foy1": {
+      "uz": "Mutlaqo bepul",
+      "ru": "Абсолютно бесплатно",
+      "en": "Absolutely free"
     },
-    "banner":{
-      "uz":"Banner reklama",
-      "ru":"Баннерная реклама",
-      "en":"Banner Advertising"
+    "foy2": {
+      "uz": "Qulay",
+      "ru": "Удобный",
+      "en": "Convenient"
     },
-    "pro":{
-      "uz":"Reklamangizni targ'ib qiling",
-      "ru":"Продвигайте свою рекламу",
-      "en":"Promote your Ad"
+    "foy3": {
+      "uz": "Moddiy foyda",
+      "ru": "Материальные выгоды",
+      "en": "Material benefits"
     },
-    "com":{
-      "uz":"Kompaniya va aloqa ma'lumotlari",
-      "ru":"Компания и контактная информация",
-      "en":"Company & Contact Info"
+    "sel": {
+      "uz": "1.Dems.uz orqali tez va oson sotishingiz mumkin.",
+      "ru": "1.Вы можете быстро и легко продать через Dems.uz.",
+      "en": "1.You can sell quickly and easily through Dems.uz."
     },
-    "itm":{
-      "uz":"Xizmat ko'rsatish shartlari",
-      "ru":"условия обслуживания",
-      "en":"Terms of Service"
+    "buy": {
+      "uz": "2.Mahsulotlaringizni qo'shimcha xarajatlarsiz targ'ib qiling",
+      "ru": "2.Продвигайте свои товары без дополнительных затрат",
+      "en": "2.Promote your products at no extra cost"
     },
-    "liv":{
-      "uz":"ko'p so'raladigan savollar",
-      "ru":"часто задаваемые вопросы",
-      "en":"FAQ"
+    "banner": {
+      "uz": "3.Marketing bo'yicha maslahatlar",
+      "ru": "3.Советы по маркетингу",
+      "en": "3.Marketing Tips"
     },
-    "ter":{
-      "uz":"Foydalanish shartlari",
-      "ru":"Условия и положения",
-      "en":"Terms & Conditions"
+    "pro": {
+      "uz": "Reklamangizni targ'ib qiling",
+      "ru": "Продвигайте свою рекламу",
+      "en": "Promote your Ad"
+    },
+    "com": {
+      "uz": "Kompaniya va aloqa ma'lumotlari",
+      "ru": "Компания и контактная информация",
+      "en": "Company & Contact Info"
+    },
+    "itm": {
+      "uz": "Xizmat ko'rsatish shartlari",
+      "ru": "условия обслуживания",
+      "en": "Terms of Service"
+    },
+    "liv": {
+      "uz": "ko'p so'raladigan savollar",
+      "ru": "часто задаваемые вопросы",
+      "en": "FAQ"
+    },
+    "ter": {
+      "uz": "Foydalanish shartlari",
+      "ru": "Условия и положения",
+      "en": "Terms & Conditions"
     }
   },
-  "settng":{
-    "but1":{
-      "uz":"O'zgartirish",
-      "ru":"Изменить",
-      "en":"Change"
+  "settng": {
+    "but1": {
+      "uz": "O'zgartirish",
+      "ru": "Изменить",
+      "en": "Change"
     },
-    "ved":{
-      "uz":"Ism va familiyangizni kiriting *",
-      "ru":"Введите ваше имя и фамилию *",
-      "en":"Enter your first and last name *"
+    "ved": {
+      "uz": "Ism va familiyangizni kiriting *",
+      "ru": "Введите ваше имя и фамилию *",
+      "en": "Enter your first and last name *"
     },
-    "pol":{
-      "uz":"Holat*",
-      "ru":"Положение дел*",
-      "en":"Status*"
+    "pol": {
+      "uz": "Holat*",
+      "ru": "Положение дел*",
+      "en": "Status*"
     },
-    "ustanov":{
-      "uz":"Manzilni belgilang",
-      "ru":"Установидь адрес",
-      "en":"Set the address"
+    "ustanov": {
+      "uz": "Manzilni belgilang",
+      "ru": "Установидь адрес",
+      "en": "Set the address"
     },
-    "adres":{
-      "uz":"Manzil",
-      "ru":"Адрес",
-      "en":"Address"
+    "adres": {
+      "uz": "Manzil",
+      "ru": "Адрес",
+      "en": "Address"
     },
-    "contact":{
-      "uz":"Bog'lanish uchun ma'lumot",
-      "ru":"Контактная информасийа",
-      "en":"Contact information"
+    "contact": {
+      "uz": "Bog'lanish uchun ma'lumot",
+      "ru": "Контактная информасийа",
+      "en": "Contact information"
     },
-    "nomer":{
-      "uz":"Telefon raqami",
-      "ru":"Номер телефона",
-      "en":"Phone number"
+    "nomer": {
+      "uz": "Telefon raqami",
+      "ru": "Номер телефона",
+      "en": "Phone number"
     },
-    "email":{
-      "uz":"E-mail manzili",
-      "ru":"Адрес электронной  почты ",
-      "en":"E-mail address"
+    "email": {
+      "uz": "E-mail manzili",
+      "ru": "Адрес электронной  почты ",
+      "en": "E-mail address"
     },
-    "but2":{
-      "uz":"O'zgarishlarni saqlang",
-      "ru":"Сохранить изменения",
-      "en":"Save changes"
+    "but2": {
+      "uz": "O'zgarishlarni saqlang",
+      "ru": "Сохранить изменения",
+      "en": "Save changes"
     }
   },
-  "ok":{
-    "uz":"Sizning eloningiz joylandi",
-    "ru":"Ваше объявление было размещено",
-    "en":"Your ad has been posted"
+  "ok": {
+    "uz": "Sizning eloningiz joylandi",
+    "ru": "Ваше объявление было размещено",
+    "en": "Your ad has been posted"
   },
-  "glavne":{
-    "uz":"bosh qismi",
-    "ru":"головная часть",
-    "en":"head part"
+  "glavne": {
+    "uz": "bosh qismi",
+    "ru": "головная часть",
+    "en": "head part"
   },
-  "ketogor":{
-    "uz":"kategoriya",
-    "ru":"категория",
-    "en":"category"
+  "ketogor": {
+    "uz": "kategoriya",
+    "ru": "категория",
+    "en": "category"
   },
-  "moyprfel":{
-    "uz":"mening profilim",
-    "ru":" мой профайл",
-    "en":"my profile"
+  "moyprfel": {
+    "uz": "mening profilim",
+    "ru": " мой профайл",
+    "en": "my profile"
   },
-  "nastroyke":{
-    "uz":"sozlamalar",
-    "ru":"настройки",
-    "en":"settings"
+  "nastroyke": {
+    "uz": "sozlamalar",
+    "ru": "настройки",
+    "en": "settings"
   },
-  "til":{
-    "uzbek":{
-      "uz":"O'zbek",
-      "ru":"Узбекский",
-      "en":"Uzbek"
+  "til": {
+    "uzbek": {
+      "uz": "O'zbek",
+      "ru": "Узбекский",
+      "en": "Uzbek"
     },
-    "rus":{
-      "uz":"Rus",
-      "ru":"Русский",
-      "en":"Russian"
+    "rus": {
+      "uz": "Rus",
+      "ru": "Русский",
+      "en": "Russian"
     },
-    "eng":{
-      "uz":"Ingliz",
-      "ru":"Английский",
-      "en":"English"
+    "eng": {
+      "uz": "Ingliz",
+      "ru": "Английский",
+      "en": "English"
     }
   },
-  "Foter":{
-    "name":{
-      "uz":"DEMS.uz ning foydalanuvchi bilan kelishuvi",
-      "ru":"Пользовательское соглашение DEMS.uz",
-      "en":"DEMS.uz user agreement"
+  "Foter": {
+    "name": {
+      "uz": "DEMS.uz ning foydalanuvchi bilan kelishuvi",
+      "ru": "Пользовательское соглашение DEMS.uz",
+      "en": "DEMS.uz user agreement"
     },
-    "qoida":{
-      "uz":"UMUMIY QOIDALAR",
-      "ru":"ОСНОВНЫЕ ПРАВИЛА",
-      "en":"GENERAL RULES"
+    "qoida": {
+      "uz": "UMUMIY QOIDALAR",
+      "ru": "ОСНОВНЫЕ ПРАВИЛА",
+      "en": "GENERAL RULES"
     },
-    "qoida1":{
-      "uz":"DEMS MChJ, (matnda keyingi o‘rinlarda Bajaruvchi va/yoki Kompaniya) Bajaruvchining internet-saytlari – http://DEMS.uz da xizmat ko‘rsatish to‘g‘risidagi mazkur ommaviy kelishuvni (matnda keyingi o‘rinlarda Kelishuv va/yoki Oferta) e‘lon qiladi.",
-      "ru":"ООО «ДЭМС» (далее - Исполнитель и / или Компания), сайты Исполнителя - настоящее публичное соглашение об обслуживании на http://DEMS.uz (далее - Соглашение и / или Оферта).",
-      "en":"DEMS LLC, (hereinafter referred to as the Executor and / or the Company) Executor's websites - this public agreement on service on http://DEMS.uz (hereinafter referred to as the Agreement and / or Offer)."
+    "qoida1": {
+      "uz": "DEMS MChJ, (matnda keyingi o‘rinlarda Bajaruvchi va/yoki Kompaniya) Bajaruvchining internet-saytlari – http://DEMS.uz da xizmat ko‘rsatish to‘g‘risidagi mazkur ommaviy kelishuvni (matnda keyingi o‘rinlarda Kelishuv va/yoki Oferta) e‘lon qiladi.",
+      "ru": "ООО «ДЭМС» (далее - Исполнитель и / или Компания), сайты Исполнителя - настоящее публичное соглашение об обслуживании на http://DEMS.uz (далее - Соглашение и / или Оферта).",
+      "en": "DEMS LLC, (hereinafter referred to as the Executor and / or the Company) Executor's websites - this public agreement on service on http://DEMS.uz (hereinafter referred to as the Agreement and / or Offer)."
     },
-    "qoida2":{
-      "uz":"Mazkur ofertada, agar matnda boshqa hol belgilanmasa, quyida keltirilgan atamalar quyidagi ma‘nolarni anglatadi:  ",
-      "ru":"В этом предложении, если в тексте не указано иное, следующие термины имеют следующие значения:",
-      "en":"In this offer, unless otherwise specified in the text, the following terms have the following meanings:"
+    "qoida2": {
+      "uz": "Mazkur ofertada, agar matnda boshqa hol belgilanmasa, quyida keltirilgan atamalar quyidagi ma‘nolarni anglatadi:  ",
+      "ru": "В этом предложении, если в тексте не указано иное, следующие термины имеют следующие значения:",
+      "en": "In this offer, unless otherwise specified in the text, the following terms have the following meanings:"
     }
   }
 }
-
-
-

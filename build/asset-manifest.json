@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.d68aeb76.chunk.css",
-    "main.js": "/static/js/main.4fa65b3b.chunk.js",
-    "main.js.map": "/static/js/main.4fa65b3b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a45ab816.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a45ab816.js.map",
-    "static/css/2.7651c32e.chunk.css": "/static/css/2.7651c32e.chunk.css",
-    "static/js/2.7351587e.chunk.js": "/static/js/2.7351587e.chunk.js",
-    "static/js/2.7351587e.chunk.js.map": "/static/js/2.7351587e.chunk.js.map",
-    "static/js/3.2603b467.chunk.js": "/static/js/3.2603b467.chunk.js",
-    "static/js/3.2603b467.chunk.js.map": "/static/js/3.2603b467.chunk.js.map",
+    "main.js": "/static/js/main.1b905395.chunk.js",
+    "main.js.map": "/static/js/main.1b905395.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ab6701a0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ab6701a0.js.map",
+    "static/css/2.99a1dece.chunk.css": "/static/css/2.99a1dece.chunk.css",
+    "static/js/2.60a7d253.chunk.js": "/static/js/2.60a7d253.chunk.js",
+    "static/js/2.60a7d253.chunk.js.map": "/static/js/2.60a7d253.chunk.js.map",
+    "static/js/3.ddcec38d.chunk.js": "/static/js/3.ddcec38d.chunk.js",
+    "static/js/3.ddcec38d.chunk.js.map": "/static/js/3.ddcec38d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.7651c32e.chunk.css.map": "/static/css/2.7651c32e.chunk.css.map",
+    "static/css/2.99a1dece.chunk.css.map": "/static/css/2.99a1dece.chunk.css.map",
     "static/css/main.d68aeb76.chunk.css.map": "/static/css/main.d68aeb76.chunk.css.map",
-    "static/js/2.7351587e.chunk.js.LICENSE.txt": "/static/js/2.7351587e.chunk.js.LICENSE.txt",
+    "static/js/2.60a7d253.chunk.js.LICENSE.txt": "/static/js/2.60a7d253.chunk.js.LICENSE.txt",
     "static/media/Cars.1f3eb6eb.png": "/static/media/Cars.1f3eb6eb.png",
     "static/media/agriculture.8981ec2d.png": "/static/media/agriculture.8981ec2d.png",
     "static/media/background.16a5857a.jpg": "/static/media/background.16a5857a.jpg",
@@ -35,10 +35,10 @@
     "static/media/subscripe.9a9b67ac.gif": "/static/media/subscripe.9a9b67ac.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.a45ab816.js",
-    "static/css/2.7651c32e.chunk.css",
-    "static/js/2.7351587e.chunk.js",
+    "static/js/runtime-main.ab6701a0.js",
+    "static/css/2.99a1dece.chunk.css",
+    "static/js/2.60a7d253.chunk.js",
     "static/css/main.d68aeb76.chunk.css",
-    "static/js/main.4fa65b3b.chunk.js"
+    "static/js/main.1b905395.chunk.js"
   ]
 }

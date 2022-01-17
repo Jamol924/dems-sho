@@ -8,7 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import L from "../../../locale/language.json";
 import { useSelector } from "react-redux";
-import { useHistory } from "react-router-dom"; 
+import { useHistory } from "react-router-dom";
 import {
   Wrapper,
   ContentRow,
@@ -16,7 +16,7 @@ import {
   MenuContent,
   StyledButton,
   StyledTextField,
-  StyledTextFieldAdd
+  StyledTextFieldAdd,
 } from "../Admen/MaterialTovar/Tovar.jsx";
 import { BackSetting } from "../../../components/Back";
 import MinNav from "../../../components/common/MineNavbar/MinNav";
@@ -24,6 +24,14 @@ import MinNav from "../../../components/common/MineNavbar/MinNav";
 function Setting() {
   const history = useHistory();
   const lan = useSelector((state) => state.allLanguage);
+  const tizim = useSelector((state) => state.allTizim);
+  const [tiz, setTiz] = useState({ phone: "", name: "" });
+
+  useEffect(() => {
+    setTiz({ ...tiz, phone: tizim.phone_number });
+  }, []);
+
+  console.log("tizim", tizim);
   const schema = yup.object({
     name: yup.string().required("This is required field"),
     status: yup.string().required("This is required field"),
@@ -42,15 +50,12 @@ function Setting() {
     resolver: yupResolver(schema),
     mode: "all",
     defaultValues: {
-      name: "",
-      // textarea: "",
+      name: tizim.name,
       adres: "",
-      phone: "",
+      phone: tiz.phone,
       email: "",
     },
   });
-
-  const user = JSON.parse(localStorage.getItem("user"));
 
   const [images, setImages] = useState("");
 
@@ -76,7 +81,7 @@ function Setting() {
   }, [errors]);
   const [stat, setStatus] = useState("");
   const [nomer, setNomer] = useState("");
-  const id = user._id;
+  const id = tizim._id;
 
   const handleSetting = async (value) => {
     await axios
@@ -101,7 +106,7 @@ function Setting() {
       )
       .then((res) => {
         console.log(res);
-        history.push("/myProfil")
+        history.push("/myProfil");
       });
   };
 
@@ -139,14 +144,14 @@ function Setting() {
                   </StyledButton>
                 </ContentRow>
               </ContentRow>
-              <ContentRow >
+              <ContentRow>
                 <Controller
                   name="name"
                   control={control}
                   defaultValue=""
                   render={({ field }) => (
                     <StyledTextFieldAdd
-                      sx={{mb:2}}
+                      sx={{ mb: 2 }}
                       label={L.settng.ved[lan]}
                       variant="filled"
                       helperText={errors?.name?.message}
@@ -193,7 +198,7 @@ function Setting() {
               <Typography sx={{ mt: 5, mb: 5 }} variant="h5">
                 {L.settng.contact[lan]}
               </Typography>
-              <ContentRow >
+              <ContentRow>
                 <Controller
                   name="phone"
                   control={control}
@@ -218,7 +223,7 @@ function Setting() {
                   defaultValue=""
                   render={({ field }) => (
                     <StyledTextFieldAdd
-                      sx={{ mb: 3}}
+                      sx={{ mb: 3 }}
                       label={L.settng.email[lan]}
                       variant="filled"
                       helperText={errors.email?.message}
@@ -235,7 +240,6 @@ function Setting() {
                   type="submit"
                   onClick={handleSubmit(handleSetting)}
                 >
-                  
                   {L.settng.but2[lan]}
                 </StyledButton>
               </Box>

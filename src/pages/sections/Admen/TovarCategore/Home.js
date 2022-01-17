@@ -711,7 +711,6 @@ function Home({ category }) {
               <StyledButton
                 onClick={handleSubmit(handlSubmit)}
                 variant="contained"
-                variant="contained"
               >
                 {L.tovarAdd.cars.but12[lan]}
               </StyledButton>
